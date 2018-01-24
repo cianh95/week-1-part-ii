@@ -1,0 +1,33 @@
+ iris3 %>% group_by(Species)%>%summarize(mean(Sepal.Length))
+	
+
+ iris3 %>% group_by(Species)%>%summarize(var(Sepal.Length))
+	
+ iris3 %>% group_by(Species)%>%summarize(sd(Sepal.Length))
+	
+iris%>% group_by(Species) %>%
+	summarize(meanSL=mean(Sepal.Length),
+		    varSL=var(Sepal.Length),
+			sdSL=sd(Sepal.Length))
+
+mtcars%>% group_by(cyl) %>%
+	summarize(meanSL=mean(Sepal.Length),
+		    varSL=var(Sepal.Length),
+			sdSL=sd(Sepal.Length))
+
+mtcars%>% group_by(cyl) %>% summarize(mean=mean(mpg)
+
+mtcars %>% select(1:4)%>% head (4)
+
+mtcars %>% select(1:vs)%>% head (4)
+
+mtcars %>% select(cyl:vs)%>% head (4)
+
+ mtcars %>% select(2:4,everything () )%>% head (4)
+
+ mtcars %>% mutate(sqrtMPG= sqrt(mpg)) %>% head (5)
+
+ mtcars %>% mutate(sqrtMPG= sqrt(mpg),logMPG=log(mpg)) %>% select(mpg,sqrtMPG,logMPG,everything() ) %>% head(5)
+
+
+
